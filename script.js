@@ -134,14 +134,7 @@
   }, barOptions);
   skillFills.forEach((el) => barObserver.observe(el));
 
-  // ----- Contact form (frontend only) -----
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Form is frontend-only. Connect to your backend or a form service to handle submissions.');
-    });
-  }
+  // ----- Contact form submits to Formspree (no JS needed) -----
 
   // ----- Footer year -----
   const yearEl = document.getElementById('year');
