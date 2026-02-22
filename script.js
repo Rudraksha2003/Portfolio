@@ -6,6 +6,10 @@
 (function () {
   'use strict';
 
+  // ----- Scroll to top on load/refresh -----
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('load', function () { window.scrollTo(0, 0); });
+
   // ----- Typing effect (hero) -----
   const taglines = [
     'Securing systems and finding vulnerabilities.',
