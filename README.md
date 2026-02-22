@@ -1,25 +1,16 @@
-# Rudraksha — Cybersecurity Portfolio
+# Rudraksha
 
-A modern, responsive personal portfolio website for cybersecurity roles (VAPT, SOC Analyst, Security Researcher). Dark theme, smooth animations, and no frameworks—just HTML, CSS, and JavaScript.
+**Cybersecurity Enthusiast | VAPT | SOC**
 
-## Quick start
+I'm passionate about securing systems and finding vulnerabilities. My focus spans **offensive security** (web app penetration testing, OWASP, vulnerability assessment) and **SOC operations** (monitoring, log analysis, incident response).
 
-Open `index.html` in a browser. No build step required.
+**Interests:** VAPT, SOC analysis, security research, hands-on labs, and continuous learning.
 
-## Deploy
+**Experience:** SOC internship with exposure to Wazuh, Palo Alto Prisma, Cortex, and Cloudflare.
 
-- **Cloudflare Pages:** Connect this repo or upload the folder. Set the output directory to the project root.
-- **GitHub Pages:** Enable Pages in repo Settings and select the branch (e.g. `main`).
-
-## Structure
-
-```
-Portfolio/
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-└── README.md
-```
+**Reach me:**  
+- Portfolio: [live site link]  
+- LinkedIn: [your LinkedIn]  
+- Email: [your email]
 
 © Rudraksha
