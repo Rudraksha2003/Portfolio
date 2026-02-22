@@ -9,8 +9,8 @@ I'm passionate about securing systems and finding vulnerabilities. My focus span
 **Experience:** SOC internship with exposure to Wazuh, Palo Alto Prisma, Cortex, and Cloudflare.
 
 **Reach me:**  
-- Portfolio: [live site link]  
-- LinkedIn: [your LinkedIn]  
-- Email: [your email]
+- Portfolio: [https://rudra.bond/]  
+- LinkedIn: [https://www.linkedin.com/in/rudraksha-gadekar-6869a722a/]  
+- Email: [rudraksha3434@gmail.com]
 
 © Rudraksha
