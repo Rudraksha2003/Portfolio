@@ -8,7 +8,18 @@
 
   // ----- Scroll to top on load/refresh -----
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  window.addEventListener('load', function () { window.scrollTo(0, 0); });
+  window.scrollTo(0, 0);
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+    requestAnimationFrame(function () { window.scrollTo(0, 0); });
+  }
+  window.addEventListener('load', scrollToTop);
+  window.addEventListener('pageshow', function () { scrollToTop(); });
+  setTimeout(scrollToTop, 0);
+  setTimeout(scrollToTop, 100);
 
   // ----- Typing effect (hero) -----
   const taglines = [
