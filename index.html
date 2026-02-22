@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rudraksha - Cybersecurity Enthusiast | VAPT | SOC. Securing systems and finding vulnerabilities.">
+  <meta name="keywords" content="cybersecurity, VAPT, SOC analyst, penetration testing, security researcher">
+  <meta name="author" content="Rudraksha">
+  <title>Rudraksha | Cybersecurity Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading overlay (optional) -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-text">Initializing...</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;R/&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Rudraksha</h1>
+      <p class="hero-title">Cybersecurity Enthusiast | VAPT | SOC</p>
+      <p class="hero-tagline"><span id="typed"></span><span class="cursor">|</span></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title" data-reveal>About Me</h2>
+      <div class="about-grid" data-reveal>
+        <div class="about-content">
+          <p>I'm passionate about <strong>cybersecurity</strong> and securing digital systems. My focus spans <strong>offensive security</strong>—finding and understanding vulnerabilities—and <strong>SOC operations</strong>, where I help detect and respond to threats.</p>
+          <p>I believe in continuous learning: hands-on labs, CTF challenges, and real-world projects keep my skills sharp. I've completed internships where I worked with enterprise security tools and monitored live environments.</p>
+          <p>Whether it's web application penetration testing, log analysis, or building lab environments, I enjoy turning theory into practice and contributing to safer systems.</p>
+        </div>
+        <div class="about-highlights">
+          <ul>
+            <li>Offensive security &amp; VAPT</li>
+            <li>SOC &amp; incident monitoring</li>
+            <li>Hands-on labs &amp; CTF-style projects</li>
+            <li>Internship experience with enterprise tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Skills</h2>
+
+      <div class="skills-category" data-reveal>
+        <h3 class="skills-category-title">Offensive Security</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Web Application Penetration Testing</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">OWASP Top 10</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Vulnerability Assessment</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="88"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-reveal>
+        <h3 class="skills-category-title">Tools</h3>
+        <div class="tools-grid">
+          <span class="tool-tag">Burp Suite</span>
+          <span class="tool-tag">Nmap</span>
+          <span class="tool-tag">Metasploit</span>
+          <span class="tool-tag">Nuclei</span>
+          <span class="tool-tag">Wireshark</span>
+          <span class="tool-tag">SQLMap</span>
+          <span class="tool-tag">Subfinder</span>
+          <span class="tool-tag">HTTPX</span>
+        </div>
+      </div>
+
+      <div class="skills-category" data-reveal>
+        <h3 class="skills-category-title">Defensive / SOC</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Wazuh</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SIEM fundamentals &amp; Log Analysis</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Incident Monitoring</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="82"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-reveal>
+        <h3 class="skills-category-title">Cloud / Infrastructure</h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-name">Proxmox</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Linux</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Networking basics</span>
+            <div class="skill-bar"><div class="skill-fill" data-progress="72"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" data-reveal>
+          <h3>Vulnerable Web Application Lab</h3>
+          <p>A CTF-style web application containing OWASP Top 10 vulnerabilities designed for learning and security testing.</p>
+          <div class="project-tech">OWASP · Web Security · PHP/Node · Docker</div>
+          <a href="#" class="btn btn-outline">View Details</a>
+        </article>
+        <article class="project-card" data-reveal>
+          <h3>Private Cloud Infrastructure (Proxmox)</h3>
+          <p>Designed a multi-node private cloud cluster with high availability and failover simulation.</p>
+          <div class="project-tech">Proxmox · Linux · HA · Networking</div>
+          <a href="#" class="btn btn-outline">View Details</a>
+        </article>
+        <article class="project-card" data-reveal>
+          <h3>Security Research &amp; Bug Hunting</h3>
+          <p>Hands-on vulnerability discovery using modern security tools and methodologies.</p>
+          <div class="project-tech">Burp · Nuclei · Recon · Reporting</div>
+          <a href="#" class="btn btn-outline">View Details</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Experience</h2>
+      <div class="experience-card" data-reveal>
+        <h3>SOC Internship</h3>
+        <p>Gained hands-on experience in a Security Operations Center working with enterprise-grade tools and workflows.</p>
+        <ul class="experience-tools">
+          <li><strong>Wazuh</strong> — endpoint detection and log analysis</li>
+          <li><strong>Palo Alto Prisma</strong> — cloud security posture</li>
+          <li><strong>Cortex</strong> — orchestration and response</li>
+          <li><strong>Cloudflare</strong> — edge security and DDoS mitigation</li>
+        </ul>
+        <p>Responsibilities included monitoring alerts, triaging incidents, and supporting the SOC team in daily operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Certifications &amp; Learning</h2>
+      <p class="certifications-intro" data-reveal>Currently pursuing and planning for the following certifications:</p>
+      <div class="certs-grid" data-reveal>
+        <div class="cert-card">
+          <span class="cert-name">CompTIA Security+</span>
+          <span class="cert-status">Planned</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">eJPT</span>
+          <span class="cert-status">Planned</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">CEH</span>
+          <span class="cert-status">Planned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Contact</h2>
+      <div class="contact-grid" data-reveal>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Rudraksha. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
