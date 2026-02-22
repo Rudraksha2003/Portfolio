@@ -134,7 +134,44 @@
   }, barOptions);
   skillFills.forEach((el) => barObserver.observe(el));
 
-  // ----- Contact form submits to Formspree (no JS needed) -----
+  // ----- Contact form: submit via AJAX so user stays on site -----
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  const formSubmitBtn = document.getElementById('formSubmitBtn');
+  if (contactForm && formStatus) {
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      formStatus.textContent = '';
+      formStatus.className = 'form-status';
+      if (formSubmitBtn) {
+        formSubmitBtn.disabled = true;
+        formSubmitBtn.textContent = 'Sending...';
+      }
+      try {
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' },
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && (data.ok || data.success !== false)) {
+          formStatus.textContent = "Thanks! I'll get back to you soon.";
+          formStatus.className = 'form-status form-status--success';
+          contactForm.reset();
+        } else {
+          formStatus.textContent = 'Something went wrong. Please try again or email me directly.';
+          formStatus.className = 'form-status form-status--error';
+        }
+      } catch {
+        formStatus.textContent = 'Something went wrong. Please try again or email me directly.';
+        formStatus.className = 'form-status form-status--error';
+      }
+      if (formSubmitBtn) {
+        formSubmitBtn.disabled = false;
+        formSubmitBtn.textContent = 'Send Message';
+      }
+    });
+  }
 
   // ----- Footer year -----
   const yearEl = document.getElementById('year');
